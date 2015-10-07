@@ -33,8 +33,7 @@ VOLUME ["/data", "/etc/nginx/sites-enabled", "/var/log/nginx", "/var/www/es", "/
 WORKDIR /etc/nginx
 
 # Expose ports.
-EXPOSE 80
-EXPOSE 443
+EXPOSE 80 8080 443
 
 # Define default command - script to modify nginx config and start nginx
 ENTRYPOINT ["/opt/startup.sh"]
