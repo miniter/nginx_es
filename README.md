@@ -36,17 +36,17 @@ configured as a proxy for [ElasticSearch](http://www.elasticsearch.org/)
 #### Authorize users
 
   # Add tools
-  sudo apt-get install -y apache2-utils
+  yum install httpd-tools
 
   # Setup directories
-  sudo mkdir -p /var/www/es
-  sudo mkdir -p /var/www/es_public
+   mkdir -p /var/www/es
+   mkdir -p /var/www/es_public
 
   # Add a public user.
-  sudo htpasswd -c /var/www/es_public/.htpasswd my_public_user_name
+   htpasswd -c /var/www/es_public/.htpasswd my_public_user_name
 
   # Add an admin user.
-  sudo htpasswd -c /var/www/es/.htpasswd my_admin_user_name
+   htpasswd -c /var/www/es/.htpasswd my_admin_user_name
 
 
 Open `http://<host>` to see the welcome page.
