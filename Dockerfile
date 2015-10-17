@@ -15,7 +15,7 @@ RUN rm -v /etc/nginx/nginx.conf
 
 # Copy a configuration file from the current directory
 ADD nginx.conf /etc/nginx/
-ADD nginx_es.conf /etc/nginx/
+ADD nginx_es.conf.original /etc/nginx
 ADD nginx_cors.conf /etc/nginx/
 ADD nginx_deny.conf /etc/nginx/
 
